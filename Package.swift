@@ -39,9 +39,10 @@ let package = Package(
                 .define("ECMULT_GEN_PREC_BITS", to: "4", nil)
             ]
         ),
-//        .testTarget(
-//            name: "secp256k1Tests",
-//            dependencies: ["secp256k1"]),
+        .testTarget(
+            name: "secp256k1Tests",
+            dependencies: ["secp256k1"]
+        ),
     ],
     cLanguageStandard: .c89
 )
